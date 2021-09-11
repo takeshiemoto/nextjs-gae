@@ -1,0 +1,19 @@
+runtime: nodejs14
+
+instance_class: F4
+
+service: default
+
+handlers:
+  - url: /.*
+    secure: always
+    script: auto
+
+default_expiration: "12h"
+
+env_variables:
+    NODE_ENV: "production"
+
+
+automatic_scaling:
+  min_instances: 0
