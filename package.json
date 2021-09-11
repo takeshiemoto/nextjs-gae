@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p $PORT",
-    "deploy": "gcloud app deploy app.yaml --project private-takeshiemoto",
+    "deploy": "yarn build && gcloud app deploy app.yaml --project private-takeshiemoto",
     "lint": "next lint"
   },
   "dependencies": {
